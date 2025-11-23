@@ -6,7 +6,8 @@ st.set_page_config(page_title="News Sentiment Dashboard", layout="wide")
 st.title("Real-Time News Sentiment Dashboard")
 
 # Load predictions
-df = pd.read_csv(r"/content/news_results_final.csv")
+df = pd.read_csv(r"news_results_final.csv")
+
 
 # Map predictions to labels
 df["Sentiment"] = df["predicted_label"]
